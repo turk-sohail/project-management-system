@@ -1,0 +1,14 @@
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+const JWT_SECRET = process.env.JWT_SECRET;
+const ACCESS_TOKEN_EXPIRY_TIME_SECONDS =
+  process.env.ACCESS_TOKEN_EXPIRY_TIME_SECONDS;
+const REFRESH_TOKEN_EXPIRY_TIME_SECONDS =
+  process.env.REFRESH_TOKEN_EXPIRY_TIME_SECONDS; // one week
+
+export {
+  JWT_SECRET,
+  ACCESS_TOKEN_EXPIRY_TIME_SECONDS,
+  REFRESH_TOKEN_EXPIRY_TIME_SECONDS,
+};
